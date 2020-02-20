@@ -38,7 +38,7 @@ const getStyleView = (
   paddingRight?: number,
   paddingY?: number,
   paddingX?: number,
-  color?: string
+  color?: string,
 ) => {
   let style = {};
   if (color) {
@@ -50,7 +50,7 @@ const getStyleView = (
     };
   }
 
-  if (margin) {
+  if (margin !== undefined) {
     style = {
       ...style,
       ...{
@@ -59,7 +59,7 @@ const getStyleView = (
     };
   }
 
-  if (marginTop) {
+  if (marginTop !== undefined) {
     style = {
       ...style,
       ...{
@@ -68,7 +68,7 @@ const getStyleView = (
     };
   }
 
-  if (marginBottom) {
+  if (marginBottom !== undefined) {
     style = {
       ...style,
       ...{
@@ -77,7 +77,7 @@ const getStyleView = (
     };
   }
 
-  if (marginLeft) {
+  if (marginLeft !== undefined) {
     style = {
       ...style,
       ...{
@@ -86,7 +86,7 @@ const getStyleView = (
     };
   }
 
-  if (marginRight) {
+  if (marginRight !== undefined) {
     style = {
       ...style,
       ...{
@@ -95,7 +95,7 @@ const getStyleView = (
     };
   }
 
-  if (marginY) {
+  if (marginY !== undefined) {
     style = {
       ...style,
       ...{
@@ -104,7 +104,7 @@ const getStyleView = (
     };
   }
 
-  if (marginX) {
+  if (marginX !== undefined) {
     style = {
       ...style,
       ...{
@@ -113,7 +113,7 @@ const getStyleView = (
     };
   }
 
-  if (padding) {
+  if (padding !== undefined) {
     style = {
       ...style,
       ...{
@@ -122,7 +122,7 @@ const getStyleView = (
     };
   }
 
-  if (paddingTop) {
+  if (paddingTop !== undefined) {
     style = {
       ...style,
       ...{
@@ -131,7 +131,7 @@ const getStyleView = (
     };
   }
 
-  if (paddingBottom) {
+  if (paddingBottom !== undefined) {
     style = {
       ...style,
       ...{
@@ -140,7 +140,7 @@ const getStyleView = (
     };
   }
 
-  if (paddingLeft) {
+  if (paddingLeft !== undefined) {
     style = {
       ...style,
       ...{
@@ -149,7 +149,7 @@ const getStyleView = (
     };
   }
 
-  if (paddingRight) {
+  if (paddingRight !== undefined) {
     style = {
       ...style,
       ...{
@@ -158,7 +158,7 @@ const getStyleView = (
     };
   }
 
-  if (paddingY) {
+  if (paddingY !== undefined) {
     style = {
       ...style,
       ...{
@@ -167,7 +167,7 @@ const getStyleView = (
     };
   }
 
-  if (paddingX) {
+  if (paddingX !== undefined) {
     style = {
       ...style,
       ...{
@@ -213,7 +213,7 @@ function View({
     paddingRight,
     paddingY,
     paddingX,
-    color
+    color,
   );
 
   return (
