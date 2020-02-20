@@ -1,6 +1,7 @@
 {
   "name": "dagangan-uikit",
-  "version": "1.0.4",
+  "version": "1.0.5",
+  "license": "ISC",
   "private": false,
   "main": "storybook/src/index.js",
   "scripts": {
@@ -9,8 +10,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "storybook": "start-storybook -p 7007",
-    "publish": "lerna publish"
+    "storybook": "start-storybook -p 7007"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -32,7 +32,6 @@
     "eslint": "^6.5.1",
     "flow-bin": "^0.105.0",
     "jest": "^24.9.0",
-    "lerna": "^3.20.2",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-dom": "16.9.0",
     "react-test-renderer": "16.9.0"
